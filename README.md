@@ -24,12 +24,12 @@ This assumes you don't have *anything* pre-installed. If you have something inst
 - [WP-CLI](http://wp-cli.org/) - A command line interface for WordPress
 - [Google Chrome Canary](https://www.google.com/chrome/browser/canary.html) - Google Chrome Canary has the newest of the new Chrome features.
 - [Sublime Text 3](http://www.sublimetext.com/3) - Sublime Text is a sophisticated text editor for code, markup and prose.
- - [CSSComb](http://csscomb.com/) - CSScomb is a coding style formatter for CSS.
- - [PlainTasks](https://github.com/aziz/PlainTasks) - An opinionated todo-list plugin for Sublime Text editor.
- - [WakaTime](https://wakatime.com/) - Analytics for programmers
- - [ColorHighlighter](https://github.com/Monnoroch/ColorHighlighter) - A plugin for the Sublime text 2 and 3, which underlays selected hexadecimal colorcodes with their real color.
- - [Monokai Soda](https://github.com/buymeasoda/soda-theme) - A theme for Sublime Text
- - [Emmet](https://github.com/sergeche/emmet-sublime) - Emmet is a plugin for many popular text editors which greatly improves HTML & CSS workflow
+- [CSSComb](http://csscomb.com/) - CSScomb is a coding style formatter for CSS.
+- [PlainTasks](https://github.com/aziz/PlainTasks) - An opinionated todo-list plugin for Sublime Text editor.
+- [WakaTime](https://wakatime.com/) - Analytics for programmers
+- [ColorHighlighter](https://github.com/Monnoroch/ColorHighlighter) - A plugin for the Sublime text 2 and 3, which underlays selected hexadecimal colorcodes with their real color.
+- [Monokai Soda](https://github.com/buymeasoda/soda-theme) - A theme for Sublime Text
+- [Emmet](https://github.com/sergeche/emmet-sublime) - Emmet is a plugin for many popular text editors which greatly improves HTML & CSS workflow
 - [SnapRuler](http://www.snaprulerapp.com/) - Screen ruler that does the job for you
 - [ColorSnapper](http://www.colorsnapper.com/) - The missing color picker for Mac
 - [KeepingYouAwake](https://github.com/newmarcel/KeepingYouAwake) - Don't let your Mac fall asleep
