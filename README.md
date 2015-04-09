@@ -8,7 +8,7 @@ This assumes you don't have *anything* pre-installed. If you have something inst
 
 - Vagrant environment with [jolliest-vagrant](https://github.com/ronilaukkarinen/jolliest-vagrant)
 - WordPress stack with [wpstack-rolle](https://github.com/ronilaukkarinen/wpstack-rolle) (based on [roots/bedrock](https://github.com/roots/bedrock))
-- Gulp, nodejs and npm-modules with [gulpfile-rolle](https://github.com/ronilaukkarinen/gulpfile-rolle)
+- Gulp, nodejs and npm-modules with [devpackages](https://github.com/ronilaukkarinen/devpackages)
 - Landing pages with [modern-html5-boilerplate](https://github.com/ronilaukkarinen/modern-html5-boilerplate)
 
 ### Part of the daily workflow
@@ -61,12 +61,12 @@ Please let me know if you have suggestions for new/better apps/modules/plugins..
 5. [Download VirtualBox](https://www.virtualbox.org/wiki/Downloads)
 6. Install [Vagrant](https://www.vagrantup.com/) with `brew install vagrant`
 7. Install vagrant-triggers with `vagrant plugin install vagrant-triggers`
-8. Clone [jolliest-vagrant](https://github.com/ronilaukkarinen/jolliest-vagrant) with `git clone git@github.com:ronilaukkarinen/jolliest-vagrant.git` to your home directory (`cd ~`), modify **Vagrantfile** if necessary
-9. Create Project directory under your home dir with either **Finder** or `mkdir ~/Projects` (this is preferred, but if you decide to store your projects elsewhere, you will have to modify every config where Projects are defined). This directory is the intended location for every project created with this stack.
-10. Clone [wpstack-rolle](https://github.com/ronilaukkarinen/wpstack-rolle) to your home directory with `git clone git@github.com:ronilaukkarinen/wpstack-rolle.git`
-11. Run `cd ~/wpstack-rolle && sh setup.sh` and complete the setup process
+8. Clone [jolliest-vagrant](https://github.com/ronilaukkarinen/jolliest-vagrant) with `git clone git@github.com:ronilaukkarinen/jolliest-vagrant.git` to your Projects directory (`cd ~/Projects`), modify **Vagrantfile** if necessary
+9. Create directory for your projects under your home dir with either **Finder** or `mkdir ~/Projects` (this is preferred, but if you decide to store your projects elsewhere, you will have to modify every config where Projects are defined). This directory is the intended location for every project created with this stack and all things related.
+10. Clone [wpstack-rolle](https://github.com/ronilaukkarinen/wpstack-rolle) to your Projects directory with `cd ~/Projects && git clone git@github.com:ronilaukkarinen/wpstack-rolle.git`
+11. Run `cd ~/Projects/wpstack-rolle && sh setup.sh` and complete the setup process
 12. Run `createproject` and wait the script to run through. **Note:** It's intended that every project name is one word, written in lowercase.
-13. Go to your project directory by `cd ~/Project/projectname` and clone [gulpfile-rolle](https://github.com/ronilaukkarinen/gulpfile-rolle) with `git clone git@github.com:ronilaukkarinen/gulpfile-rolle.git .` (note the dot in the end of a command, we want these to the same directory)
+13. Go to your project directory by `cd ~/Project/projectname` and clone [devpackages](https://github.com/ronilaukkarinen/devpackages) with `git clone git@github.com:ronilaukkarinen/devpackages.git .` (note the dot in the end of a command, we want these to the same directory)
 14. Edit `PROJECTNAME` (project folder name) and `THEMENAME` (your theme folder name in content/themes/x) to match your WordPress project and theme name sin **gulpfile.js** and **package.json**.
 15. Install [Node.js](http://nodejs.org/) with `brew install node`
 16. Install npm updates checker [npm-check-updates](https://www.npmjs.com/package/npm-check-updates) with `sudo npm install -g npm-check-updates`
