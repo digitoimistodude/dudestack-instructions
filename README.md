@@ -21,6 +21,7 @@ Please let me know if you have suggestions for new/better apps/modules/plugins..
 - [Node.js](http://nodejs.org/) - Node.js® is a platform built on Chrome's JavaScript runtime for easily building fast, scalable network applications.
 - [npm](https://www.npmjs.com/) - A package manager for node/browsers/gulp/etc.
 - [Vagrant](https://www.vagrantup.com/) - Create and configure lightweight, reproducible, and portable development environments.
+- [Vagrant Manager](http://vagrantmanager.com/) - Manage your vagrant machines in one place with Vagrant Manager for OS X.
 - [Gulp](http://gulpjs.com/) - Automate and enhance your workflow
 - [BrowserSync](http://www.browsersync.io/) - Time-saving synchronised browser testing.
 - [Composer](https://getcomposer.org/) - Dependency Manager for PHP
@@ -40,16 +41,17 @@ Please let me know if you have suggestions for new/better apps/modules/plugins..
 - [Todoist](http://todoist.com/) - Todoist is the best online task management app and to-do list.
 - [f.lux](https://justgetflux.com/) - Is your computer keeping you up late? f.lux is free software that warms up your computer display at night, to match your indoor lighting.
 - [ImageOptim](https://imageoptim.com/) - better Save For Web
+- [Bower](http://bower.io/) - A package manager for the web
 
 ## Requirements
 
 - Mac OS X
 - Command line
-- Patience
+- Patient learning curve
+- Urge to always know more about anything
 
 ## To Do
 
-- [Bower](http://bower.io/)
 - [HHVM](http://hhvm.com/)
 
 # Installation
