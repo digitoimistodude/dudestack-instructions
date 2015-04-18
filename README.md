@@ -1,6 +1,6 @@
 # A modern Front End development environment
 
-My company is digital agency called Dude (Digitoimisto Dude Oy), [check out the company website](https://www.dude.fi) and I am the founder and developer. I'm using plenty of tools, apps, modules, frameworks which together are called "stack". Dudestack-instructions contains information about these tools *and* instructions on how to set up a similar stack.
+My company is a digital agency called Dude (Digitoimisto Dude Oy), [check out the company website](https://www.dude.fi) where I'm the head of technical development at the moment. I'm using plenty of tools, apps, modules, frameworks which together are called "stack". Dudestack-instructions contains information about these tools *and* instructions on how to set up a similar stack.
 
 This repo and instructions exist only because my envinroment setup is growing so fast and there's simply too many repositories to consider when building the stack from scratch. 
 
