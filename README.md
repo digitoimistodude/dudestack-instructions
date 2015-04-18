@@ -60,7 +60,7 @@ This is just a tip of the iceberg, but I hope it's useful to you.
 - [Sassy-Gridlover](https://github.com/hiulit/Sassy-Gridlover) - Super easy to use Sass mixins to establish a typographic system with modular scale and vertical rhythm. (alternative)
 - [Sassline](https://sassline.com/) - Set text on the web to a baseline grid with Sass & rems.
 
-##### Slider and effects
+##### Effects
 
 - [Animate.css](http://daneden.github.io/animate.css/) - A cross-browser library of CSS animations. As easy to use as an easy thing.
 - [WOW.js](http://mynameismatthieu.com/WOW/) - Reveal Animations When Scrolling
