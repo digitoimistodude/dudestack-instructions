@@ -17,16 +17,26 @@ This is just a tip of the iceberg, but I hope it's useful to you.
 - Gulp, nodejs and npm-modules with [devpackages](https://github.com/ronilaukkarinen/devpackages)
 - Landing pages with [modern-html5-boilerplate](https://github.com/ronilaukkarinen/modern-html5-boilerplate)
 
-### Bulding blocks for SCSS, jQuery, PHP
+### Tools / bulding blocks for SCSS, jQuery, PHP
 
 #### For building 
 
-- [Bower](http://bower.io/) - A package manager for the web (to install and update CSS/Javascript packages and their dependencies)
-- [Gulp](http://gulpjs.com/) - Automate and enhance your workflow
+- [BitBucket](https://bitbucket.org/) - Bitbucket is a free code DVCS hosting site for Git and Mercurial. Manage your development with a hosted wiki, issue tracker and source code.
+- [RVM](https://rvm.io/) - RVM is a command-line tool which allows you to easily install, manage, and work with multiple ruby environments from interpreters to sets of gems.
+- [Homebrew](http://brew.sh/) - The missing package manager for OS X
+- [Node.js](http://nodejs.org/) - Node.js® is a platform built on Chrome's JavaScript runtime for easily building fast, scalable network applications.
 - [npm](https://www.npmjs.com/) - A package manager for node/browsers/gulp/etc.
-- [devpackages](https://github.com/ronilaukkarinen/devpackages) - My setup for Gulp and Bower
+- [Vagrant](https://www.vagrantup.com/) - Create and configure lightweight, reproducible, and portable development environments.
+- [Vagrant Manager](http://vagrantmanager.com/) - Manage your vagrant machines in one place with Vagrant Manager for OS X.
+- [Gulp](http://gulpjs.com/) - Automate and enhance your workflow (my gulpfile.js can be found in [devpackages](https://github.com/ronilaukkarinen/devpackages))
+- [BrowserSync](http://www.browsersync.io/) - Time-saving synchronised browser testing. (included in Gulp like in many other awesome tasks, check out my [devpackages](https://github.com/ronilaukkarinen/devpackages))
+- [Bower](http://bower.io/) - A package manager for the web (to install and update CSS/Javascript packages and their dependencies, see my [devpackages](https://github.com/ronilaukkarinen/devpackages))
+- [Composer](https://getcomposer.org/) - Dependency Manager for PHP
+- [WP-CLI](http://wp-cli.org/) - A command line interface for WordPress
+- [Google Chrome Canary](https://www.google.com/chrome/browser/canary.html) - Google Chrome Canary has the newest of the new Chrome features.
+- [Sublime Text 3](http://www.sublimetext.com/3) - Sublime Text is a sophisticated text editor for code, markup and prose. (also check out my current [sublime-settings](https://github.com/ronilaukkarinen/sublime-settings))
 
-#### For developing
+#### For developing and designing
 
 ##### Layout
 
@@ -84,29 +94,10 @@ stock photos in one place (CC0)
 - [Codrops](http://tympanus.net/codrops/)
 - [Codepen](http://codepen.io/)
 
-### Most of the apps and tools included in daily workflow
+#### Other apps and tools included in daily workflow
 
 Please let me know if you have suggestions for new/better apps/modules/plugins...
 
-- [BitBucket](https://bitbucket.org/) - Bitbucket is a free code DVCS hosting site for Git and Mercurial. Manage your development with a hosted wiki, issue tracker and source code.
-- [RVM](https://rvm.io/) - RVM is a command-line tool which allows you to easily install, manage, and work with multiple ruby environments from interpreters to sets of gems.
-- [Homebrew](http://brew.sh/) - The missing package manager for OS X
-- [Node.js](http://nodejs.org/) - Node.js® is a platform built on Chrome's JavaScript runtime for easily building fast, scalable network applications.
-- [npm](https://www.npmjs.com/) - A package manager for node/browsers/gulp/etc.
-- [Vagrant](https://www.vagrantup.com/) - Create and configure lightweight, reproducible, and portable development environments.
-- [Vagrant Manager](http://vagrantmanager.com/) - Manage your vagrant machines in one place with Vagrant Manager for OS X.
-- [Gulp](http://gulpjs.com/) - Automate and enhance your workflow
-- [BrowserSync](http://www.browsersync.io/) - Time-saving synchronised browser testing.
-- [Composer](https://getcomposer.org/) - Dependency Manager for PHP
-- [WP-CLI](http://wp-cli.org/) - A command line interface for WordPress
-- [Google Chrome Canary](https://www.google.com/chrome/browser/canary.html) - Google Chrome Canary has the newest of the new Chrome features.
-- [Sublime Text 3](http://www.sublimetext.com/3) - Sublime Text is a sophisticated text editor for code, markup and prose.
-- [CSSComb](http://csscomb.com/) - CSScomb is a coding style formatter for CSS.
-- [PlainTasks](https://github.com/aziz/PlainTasks) - An opinionated todo-list plugin for Sublime Text editor.
-- [WakaTime](https://wakatime.com/) - Analytics for programmers
-- [ColorHighlighter](https://github.com/Monnoroch/ColorHighlighter) - A plugin for the Sublime text 2 and 3, which underlays selected hexadecimal colorcodes with their real color.
-- [Monokai Soda](https://github.com/buymeasoda/soda-theme) - A theme for Sublime Text
-- [Emmet](https://github.com/sergeche/emmet-sublime) - Emmet is a plugin for many popular text editors which greatly improves HTML & CSS workflow
 - [SnapRuler](http://www.snaprulerapp.com/) - Screen ruler that does the job for you
 - [ColorSnapper](http://www.colorsnapper.com/) - The missing color picker for Mac
 - [KeepingYouAwake](https://github.com/newmarcel/KeepingYouAwake) - Don't let your Mac fall asleep
@@ -114,7 +105,6 @@ Please let me know if you have suggestions for new/better apps/modules/plugins..
 - [Todoist](http://todoist.com/) - Todoist is the best online task management app and to-do list.
 - [f.lux](https://justgetflux.com/) - Is your computer keeping you up late? f.lux is free software that warms up your computer display at night, to match your indoor lighting.
 - [ImageOptim](https://imageoptim.com/) - better Save For Web
-- [Bower](http://bower.io/) - A package manager for the web
 
 ## Requirements
 
