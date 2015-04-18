@@ -1,17 +1,90 @@
 # A modern Front End development environment
 
-These instructions exist only because my envinroment setup is growing so fast and there's simply too many repositories to consider when building the stack from scratch.
+My company is digital agency called Dude (Digitoimisto Dude Oy), [check out the company website](https://www.dude.fi) and I am the founder and developer. I'm using plenty of tools, apps, modules, frameworks which together are called "stack". Dudestack-instructions contains information about these tools *and* instructions on how to set up a similar stack.
 
-This assumes you don't have *anything* pre-installed. If you have something installed, please just skip the step. Scroll down to [Installation](https://github.com/ronilaukkarinen/dudestack-instructions#installation). **Note:** This is not yet tested, so feel free to do so.
+This repo and instructions exist only because my envinroment setup is growing so fast and there's simply too many repositories to consider when building the stack from scratch. 
 
-#### Dudestack-instructions = Instructions for setting up
+The instructions assume that you don't have *anything* pre-installed. If you have something installed, please just skip the step. Scroll down to [Installation](https://github.com/ronilaukkarinen/dudestack-instructions#installation). 
+
+This is just a tip of the iceberg, but I hope it's useful to you.
+
+**Note:** [The Instructions](https://github.com/ronilaukkarinen/dudestack-instructions#installation) are completely untested, so feel free to do so and throw an issue if something doesn't work out just quite it should.
+
+### Dudestack-instructions = Instructions for setting up
 
 - Vagrant environment with [jolliest-vagrant](https://github.com/ronilaukkarinen/jolliest-vagrant)
 - WordPress stack with [wpstack-rolle](https://github.com/ronilaukkarinen/wpstack-rolle) (based on [roots/bedrock](https://github.com/roots/bedrock))
 - Gulp, nodejs and npm-modules with [devpackages](https://github.com/ronilaukkarinen/devpackages)
 - Landing pages with [modern-html5-boilerplate](https://github.com/ronilaukkarinen/modern-html5-boilerplate)
 
-### Part of the daily workflow
+### Bulding blocks for SCSS, jQuery, PHP
+
+#### For building 
+
+- [Bower](http://bower.io/) - A package manager for the web (to install and update CSS/Javascript packages and their dependencies)
+- [Gulp](http://gulpjs.com/) - Automate and enhance your workflow
+- [npm](https://www.npmjs.com/) - A package manager for node/browsers/gulp/etc.
+- [devpackages](https://github.com/ronilaukkarinen/devpackages) - My setup for Gulp and Bower
+
+#### For developing
+
+##### Layout
+
+- [Jeet Grid System](http://jeet.gs/) - Smart CSS preprocessor grids
+- [Font Awesome](http://fortawesome.github.io/Font-Awesome/) - The iconic font and CSS toolkit
+- [Normalize.scss](https://github.com/JohnAlbin/normalize-scss) - A modern, HTML5-ready alternative to CSS resets
+- [Vide](http://vodkabears.github.io/vide/) Easy as hell jQuery plugin for video backgrounds
+- [jQuery.equalHeights](https://github.com/mattbanks/jQuery.equalHeights) - Simple equal heights jQuery plugin
+- [Packery](http://packery.metafizzy.co/) - Packery makes your crazy & clever layout a real thing.
+- [Magnific Popup](http://dimsemenov.com/plugins/magnific-popup/) - Magnific Popup is a responsive lightbox & dialog script with focus on performance and providing best experience for user with any device
+- [fancyBox](http://fancyapps.com/fancybox/) - Fancy jQuery Lightbox Alternative
+
+##### Social Media integrations
+
+- [Pongstagram](http://pongstr.github.io/pongstagr.am/ ) - jQuery plugin that lets you display your Instagram media to your website using Bootstrap Front-end styles and modal-plugin.
+- [Instagram-PHP-API](https://github.com/cosenary/Instagram-PHP-API) - An easy-to-use PHP Class for accessing Instagram's API
+- [Facebook PHP SDK](https://github.com/facebookarchive/facebook-php-sdk) - The Facebook SDK for PHP provides a native interface to the Graph API and Facebook Login (preferably [v4](https://github.com/facebook/facebook-php-sdk-v4))
+- [php-foursquare](https://github.com/hownowstephen/php-foursquare) - A simple foursquare API v2 library for PHP focused on supplying core functionality without any extra bloat.
+- [Pintlabs Untappd](https://github.com/PintLabs/Pintlabs_Service_Untappd) - PHP library to interact with the Untappd public API
+
+##### Navigations
+
+- [Flexnav-rolle](https://github.com/ronilaukkarinen/flexnav-rolle) - A jQuery plugin for responsive menus
+- [Trunk.js](http://www.roblukedesign.com/trunk/trunk.html) - A responsive web design to hide top navigation into a navigation drawer on Tablets and Mobile Phones
+- [Responsive Nav](http://responsive-nav.com/) - Responsive navigation plugin without library dependencies and with fast touch screen support
+
+##### Typography
+
+- [Sass Boilerplate's fontFace](https://github.com/magnetikonline/sassboilerplate) - Easy include a webfont
+- [knife](https://github.com/Pushplaybang/knife) - Nail vertical rhythm, modular scale, and REMs like a boss with this simple set of SASS/SCSS variables, functions and mixins. (preferred)
+- [Sassy-Gridlover](https://github.com/hiulit/Sassy-Gridlover) - Super easy to use Sass mixins to establish a typographic system with modular scale and vertical rhythm. (alternative)
+- [Sassline](https://sassline.com/) - Set text on the web to a baseline grid with Sass & rems.
+
+##### Slider and effects
+
+- [Animate.css](http://daneden.github.io/animate.css/) - A cross-browser library of CSS animations. As easy to use as an easy thing.
+- [WOW.js](http://mynameismatthieu.com/WOW/) - Reveal Animations When Scrolling
+- [Slick](http://kenwheeler.github.io/slick/) - The last carousel you'll ever need
+- [skrollr](http://prinzhorn.github.io/skrollr/) - Parallax scrolling for the masses
+- [waypoints](http://imakewebthings.com/waypoints/) - Waypoints is the easiest way to trigger a function when you scroll to an element.
+
+##### Freebies
+
+- [StockSnap.io](https://stocksnap.io/) - Beautiful free stock photos. (CC0)
+- [TheStocks.im](http://thestocks.im/) - The best royalty free
+stock photos in one place (CC0)
+- [Pexels Videos](https://videos.pexels.com/) - Completely free stock videos. (CC0)
+- [Pixel Buddha](http://pixelbuddha.net/) - Free and premium resources for designers and developers
+- [Streetwill](http://streetwill.co/) - Free Hi-Res Photos (CC0)
+- [Life of Pix](http://www.lifeofpix.com/) - Free high-resolution photos (CC0)
+
+##### Inspiration and useful parts
+
+- [CodyHouse](http://codyhouse.co/)
+- [Codrops](http://tympanus.net/codrops/)
+- [Codepen](http://codepen.io/)
+
+### Most of the apps and tools included in daily workflow
 
 Please let me know if you have suggestions for new/better apps/modules/plugins...
 
