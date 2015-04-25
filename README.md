@@ -105,6 +105,7 @@ Please let me know if you have suggestions for new/better apps/modules/plugins..
 - [Todoist](http://todoist.com/) - Todoist is the best online task management app and to-do list.
 - [f.lux](https://justgetflux.com/) - Is your computer keeping you up late? f.lux is free software that warms up your computer display at night, to match your indoor lighting.
 - [ImageOptim](https://imageoptim.com/) - better Save For Web
+- [Moom](http://manytricks.com/moom/) - Move and zoom windows
 
 ## Requirements
 
