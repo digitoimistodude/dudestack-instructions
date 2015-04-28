@@ -124,6 +124,7 @@ Please let me know if you have suggestions for new/better apps/modules/plugins..
 2. Open **Terminal** and run `ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"` to download latest version of [Homebrew](http://brew.sh/)
 3. Install latest version of [rvm](https://rvm.io/) with `curl -L https://get.rvm.io | bash -s stable --auto-dotfiles --autolibs=enable --rails` to get ruby working
 4. Install latest version of [Git](http://git-scm.com/downloads) with `brew install git`
+5. Install latest version of [Composer](https://getcomposer.org) with `curl -sS https://getcomposer.org/installer | php && sudo mv composer.phar /usr/local/bin/composer && sudo chmod +x /usr/local/bin/composer`
 5. [Download VirtualBox](https://www.virtualbox.org/wiki/Downloads)
 6. Install [Vagrant](https://www.vagrantup.com/) with `brew install vagrant`
 7. Install vagrant-triggers with `vagrant plugin install vagrant-triggers`
