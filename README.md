@@ -127,7 +127,7 @@ Please let me know if you have suggestions for new/better apps/modules/plugins..
 5. [Download VirtualBox](https://www.virtualbox.org/wiki/Downloads)
 6. Install [Vagrant](https://www.vagrantup.com/) with `brew install vagrant`
 7. Install vagrant-triggers with `vagrant plugin install vagrant-triggers`
-8. Clone [jolliest-vagrant](https://github.com/ronilaukkarinen/jolliest-vagrant) with `git clone git@github.com:ronilaukkarinen/jolliest-vagrant.git` to your Projects directory (`cd ~/Projects`), modify **Vagrantfile** if necessary
+8. Clone [jolliest-vagrant](https://github.com/ronilaukkarinen/jolliest-vagrant) with `git clone https://github.com/ronilaukkarinen/jolliest-vagrant.git` to your Projects directory (`cd ~/Projects`), modify **Vagrantfile** if necessary
 9. Create directory for your projects under your home dir with either **Finder** or `mkdir ~/Projects` (this is preferred, but if you decide to store your projects elsewhere, you will have to modify every config where Projects are defined). This directory is the intended location for every project created with this stack and all things related.
 10. Clone [dudestack](https://github.com/ronilaukkarinen/dudestack) to your Projects directory with `cd ~/Projects && git clone git@github.com:ronilaukkarinen/dudestack.git`
 11. Run `cd ~/Projects/dudestack && sh setup.sh` and complete the setup process
