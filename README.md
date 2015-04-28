@@ -13,7 +13,7 @@ This is just a tip of the iceberg, but I hope it's useful to you.
 ### Dudestack-instructions = Instructions for setting up
 
 - Vagrant environment with [jolliest-vagrant](https://github.com/ronilaukkarinen/jolliest-vagrant)
-- WordPress stack with [wpstack-rolle](https://github.com/ronilaukkarinen/wpstack-rolle) (based on [roots/bedrock](https://github.com/roots/bedrock))
+- WordPress stack with [dudestack](https://github.com/ronilaukkarinen/dudestack) (based on [roots/bedrock](https://github.com/roots/bedrock))
 - Gulp, nodejs and npm-modules with [devpackages](https://github.com/ronilaukkarinen/devpackages)
 - Landing pages with [modern-html5-boilerplate](https://github.com/ronilaukkarinen/modern-html5-boilerplate)
 
@@ -129,8 +129,8 @@ Please let me know if you have suggestions for new/better apps/modules/plugins..
 7. Install vagrant-triggers with `vagrant plugin install vagrant-triggers`
 8. Clone [jolliest-vagrant](https://github.com/ronilaukkarinen/jolliest-vagrant) with `git clone git@github.com:ronilaukkarinen/jolliest-vagrant.git` to your Projects directory (`cd ~/Projects`), modify **Vagrantfile** if necessary
 9. Create directory for your projects under your home dir with either **Finder** or `mkdir ~/Projects` (this is preferred, but if you decide to store your projects elsewhere, you will have to modify every config where Projects are defined). This directory is the intended location for every project created with this stack and all things related.
-10. Clone [wpstack-rolle](https://github.com/ronilaukkarinen/wpstack-rolle) to your Projects directory with `cd ~/Projects && git clone git@github.com:ronilaukkarinen/wpstack-rolle.git`
-11. Run `cd ~/Projects/wpstack-rolle && sh setup.sh` and complete the setup process
+10. Clone [dudestack](https://github.com/ronilaukkarinen/dudestack) to your Projects directory with `cd ~/Projects && git clone git@github.com:ronilaukkarinen/dudestack.git`
+11. Run `cd ~/Projects/dudestack && sh setup.sh` and complete the setup process
 12. Run `createproject` and wait the script to run through. **Note:** It's intended that every project name is one word, written in lowercase.
 13. Go to your project directory by `cd ~/Project/projectname` and clone [devpackages](https://github.com/ronilaukkarinen/devpackages) with `git clone git@github.com:ronilaukkarinen/devpackages.git .` (note the dot in the end of a command, we want these to the same directory)
 14. Edit `PROJECTNAME` (project folder name) and `THEMENAME` (your theme folder name in content/themes/x) to match your WordPress project and theme name sin **gulpfile.js** and **package.json**.
