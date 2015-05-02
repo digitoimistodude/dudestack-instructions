@@ -101,6 +101,7 @@ Please let me know if you have suggestions for new/better apps/modules/plugins..
 - [SnapRuler](http://www.snaprulerapp.com/) - Screen ruler that does the job for you
 - [ColorSnapper](http://www.colorsnapper.com/) - The missing color picker for Mac
 - [KeepingYouAwake](https://github.com/newmarcel/KeepingYouAwake) - Don't let your Mac fall asleep
+- [Amphetamine](https://itunes.apple.com/us/app/amphetamine/id937984704?mt=12) - With Amphetamine, you can effortlessly override your energy saver settings and keep your Mac awake.
 - [Trello](https://trello.com/ronilaukkarinen/recommend) - Trello is the free, flexible, and visual way to organize anything with anyone.
 - [Todoist](http://todoist.com/) - Todoist is the best online task management app and to-do list.
 - [f.lux](https://justgetflux.com/) - Is your computer keeping you up late? f.lux is free software that warms up your computer display at night, to match your indoor lighting.
