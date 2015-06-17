@@ -52,6 +52,7 @@ This is just a tip of the iceberg, but I hope it's useful to you.
 ##### Boilerplates
 
 - [Outline](https://github.com/matt-harris/outline) - Outline is a simple CSS starter responsive boilerplate for any new web project, created by Matt Harris
+- [Blueplate](https://github.com/chrishumboldt/Blueplate) - A lightweight, responsive CSS layout engine and SASS mixin library
 
 ##### Social Media integrations
 
