@@ -2,9 +2,9 @@
 
 My company is a digital agency called Dude (Digitoimisto Dude Oy), [check out the company website](https://www.dude.fi) where I'm the head of technical development at the moment. I'm using plenty of tools, apps, modules, frameworks which together are called "stack". Dudestack-instructions contains information about these tools *and* instructions on how to set up a similar stack.
 
-This repo and instructions exist only because my envinroment setup is growing so fast and there's simply too many repositories to consider when building the stack from scratch. 
+This repo and instructions exist only because my envinroment setup is growing so fast and there's simply too many repositories to consider when building the stack from scratch.
 
-The instructions assume that you don't have *anything* pre-installed. If you have something installed, please just skip the step. Scroll down to [Installation](https://github.com/ronilaukkarinen/dudestack-instructions#installation). 
+The instructions assume that you don't have *anything* pre-installed. If you have something installed, please just skip the step. Scroll down to [Installation](https://github.com/ronilaukkarinen/dudestack-instructions#installation).
 
 This is just a tip of the iceberg, but I hope it's useful to you.
 
@@ -141,18 +141,19 @@ Please let me know if you have suggestions for new/better apps/modules/plugins..
 6. Install latest version of [Composer](https://getcomposer.org) with `curl -sS https://getcomposer.org/installer | php && sudo mv composer.phar /usr/local/bin/composer && sudo chmod +x /usr/local/bin/composer`
 7. [Download VirtualBox](https://www.virtualbox.org/wiki/Downloads)
 8. Install [Vagrant](https://www.vagrantup.com/) with `brew install vagrant`
-9. Install vagrant-triggers with `vagrant plugin install vagrant-triggers`
-10. Clone [jolliest-vagrant](https://github.com/ronilaukkarinen/jolliest-vagrant) with `git clone https://github.com/ronilaukkarinen/jolliest-vagrant.git` to your Projects directory (`cd ~/Projects`), modify **Vagrantfile** if necessary
-11. Create directory for your projects under your home dir with either **Finder** or `mkdir ~/Projects` (this is preferred, but if you decide to store your projects elsewhere, you will have to modify every config where Projects are defined). This directory is the intended location for every project created with this stack and all things related.
-12. Clone [dudestack](https://github.com/ronilaukkarinen/dudestack) to your Projects directory with `cd ~/Projects && git clone https://github.com/ronilaukkarinen/dudestack`
-13. Run `cd ~/Projects/dudestack && sh setup.sh` and complete the setup process
-14. Run `createproject` and wait the script to run through. **Note:** It's intended that every project name is one word, written in lowercase.
-15. Go to your project directory by `cd ~/Project/projectname` and clone [devpackages](https://github.com/ronilaukkarinen/devpackages) with `git clone https://github.com/ronilaukkarinen/devpackages .` (note the dot in the end of a command, we want these to the same directory)
-16. Edit `PROJECTNAME` (project folder name) and `THEMENAME` (your theme folder name in content/themes/x) to match your WordPress project and theme name sin **gulpfile.js** and **package.json**.
-17. Install [Node.js](http://nodejs.org/) with `brew install node`
-18. Install npm updates checker [npm-check-updates](https://www.npmjs.com/package/npm-check-updates) with `sudo npm install -g npm-check-updates`
-19. Check updates for npm modules by running `npm-check-updates -u` (still in the Project directory, /Users/yourusername/Projects/yourproject. You can check where you are by `pwd`)
-20. Install npm package updates by `npm install` and update them by `npm update`
-21. Install [Google Chrome Canary](https://www.google.com/chrome/browser/canary.html)
-22. Run `gulp watch`. A new Google Canary browser window should open and you can start coding your WordPress theme.
-23. If you want to create a landing page instead, go to Project dir with `cd ~/Projects`, clone [modern-html5-boilerplate](https://github.com/ronilaukkarinen/modern-html5-boilerplate) with `git clone https://github.com/ronilaukkarinen/modern-html5-boilerplate`, rename folder to your project, edit **gulpfile.js** and start coding
+9. Install [Vagrant Manager](http://vagrantmanager.com/) with `brew cask install vagrant-manager`
+10. Install vagrant-triggers with `vagrant plugin install vagrant-triggers`
+11. Clone [jolliest-vagrant](https://github.com/ronilaukkarinen/jolliest-vagrant) with `git clone https://github.com/ronilaukkarinen/jolliest-vagrant.git` to your Projects directory (`cd ~/Projects`), modify **Vagrantfile** if necessary
+12. Create directory for your projects under your home dir with either **Finder** or `mkdir ~/Projects` (this is preferred, but if you decide to store your projects elsewhere, you will have to modify every config where Projects are defined). This directory is the intended location for every project created with this stack and all things related.
+13. Clone [dudestack](https://github.com/ronilaukkarinen/dudestack) to your Projects directory with `cd ~/Projects && git clone https://github.com/ronilaukkarinen/dudestack`
+14. Run `cd ~/Projects/dudestack && sh setup.sh` and complete the setup process
+15. Run `createproject` and wait the script to run through. **Note:** It's intended that every project name is one word, written in lowercase.
+16. Go to your project directory by `cd ~/Project/projectname` and clone [devpackages](https://github.com/ronilaukkarinen/devpackages) with `git clone https://github.com/ronilaukkarinen/devpackages .` (note the dot in the end of a command, we want these to the same directory)
+17. Edit `PROJECTNAME` (project folder name) and `THEMENAME` (your theme folder name in content/themes/x) to match your WordPress project and theme name sin **gulpfile.js** and **package.json**.
+18. Install [Node.js](http://nodejs.org/) with `brew install node`
+19. Install npm updates checker [npm-check-updates](https://www.npmjs.com/package/npm-check-updates) with `sudo npm install -g npm-check-updates`
+20. Check updates for npm modules by running `npm-check-updates -u` (still in the Project directory, /Users/yourusername/Projects/yourproject. You can check where you are by `pwd`)
+21. Install npm package updates by `npm install` and update them by `npm update`
+22. Install [Google Chrome Canary](https://www.google.com/chrome/browser/canary.html)
+23. Run `gulp watch`. A new Google Canary browser window should open and you can start coding your WordPress theme.
+24. If you want to create a landing page instead, go to Project dir with `cd ~/Projects`, clone [modern-html5-boilerplate](https://github.com/ronilaukkarinen/modern-html5-boilerplate) with `git clone https://github.com/ronilaukkarinen/modern-html5-boilerplate`, rename folder to your project, edit **gulpfile.js** and start coding
