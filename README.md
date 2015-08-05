@@ -105,6 +105,11 @@ stock photos in one place (CC0)
 - [Codrops](http://tympanus.net/codrops/)
 - [Codepen](http://codepen.io/)
 
+#### For testing and debugging
+
+- [caniuse-cmd](https://github.com/sgentle/caniuse-cmd) - [Caniuse](http://caniuse.com/) command line tool
+- [Google PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/) - The PageSpeed tools analyze and optimize your site following web best practices.
+
 #### Other apps and tools included in daily workflow
 
 Please let me know if you have suggestions for new/better apps/modules/plugins...
@@ -118,6 +123,7 @@ Please let me know if you have suggestions for new/better apps/modules/plugins..
 - [f.lux](https://justgetflux.com/) - Is your computer keeping you up late? f.lux is free software that warms up your computer display at night, to match your indoor lighting.
 - [ImageOptim](https://imageoptim.com/) - better Save For Web
 - [Moom](http://manytricks.com/moom/) - Move and zoom windows
+- [LittleIpsum](https://itunes.apple.com/us/app/littleipsum/id405772121?mt=12) - The best Latin text generator for OS X. Incredibly quick and lightweight. And it’s completely free!
 
 ## Requirements
 
