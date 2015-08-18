@@ -143,8 +143,8 @@ Please let me know if you have suggestions for new/better apps/modules/plugins..
 8. Install [Vagrant](https://www.vagrantup.com/) with `brew install vagrant`
 9. Install [Vagrant Manager](http://vagrantmanager.com/) with `brew cask install vagrant-manager`
 10. Install vagrant-triggers with `vagrant plugin install vagrant-triggers`
-11. Clone [jolliest-vagrant](https://github.com/ronilaukkarinen/jolliest-vagrant) with `git clone https://github.com/ronilaukkarinen/jolliest-vagrant.git` to your Projects directory (`cd ~/Projects`), modify **Vagrantfile** if necessary
-12. Create directory for your projects under your home dir with either **Finder** or `mkdir ~/Projects` (this is preferred, but if you decide to store your projects elsewhere, you will have to modify every config where Projects are defined). This directory is the intended location for every project created with this stack and all things related.
+11. Create directory for your projects under your home dir with either **Finder** or `mkdir ~/Projects` (this is preferred, but if you decide to store your projects elsewhere, you will have to modify every config where Projects are defined). This directory is the intended location for every project created with this stack and all things related.
+12. Clone [jolliest-vagrant](https://github.com/ronilaukkarinen/jolliest-vagrant) with `git clone https://github.com/ronilaukkarinen/jolliest-vagrant.git` to your Projects directory (`cd ~/Projects`), modify **Vagrantfile** if necessary
 13. Clone [dudestack](https://github.com/ronilaukkarinen/dudestack) to your Projects directory with `cd ~/Projects && git clone https://github.com/ronilaukkarinen/dudestack`
 14. Run `cd ~/Projects/dudestack && sh setup.sh` and complete the setup process
 15. Run `createproject` and wait the script to run through. **Note:** It's intended that every project name is one word, written in lowercase.
