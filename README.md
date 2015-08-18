@@ -2,9 +2,9 @@
 
 My company is a digital agency called Dude (Digitoimisto Dude Oy), [check out the company website](https://www.dude.fi) where I'm the head of technical development at the moment. I'm using plenty of tools, apps, modules, frameworks which together are called "stack". Dudestack-instructions contains information about these tools *and* instructions on how to set up a similar stack.
 
-This repo and instructions exist only because my envinroment setup is growing so fast and there's simply too many repositories to consider when building the stack from scratch. 
+This repo and instructions exist only because my envinroment setup is growing so fast and there's simply too many repositories to consider when building the stack from scratch.
 
-The instructions assume that you don't have *anything* pre-installed. If you have something installed, please just skip the step. Scroll down to [Installation](https://github.com/ronilaukkarinen/dudestack-instructions#installation). 
+The instructions assume that you don't have *anything* pre-installed. If you have something installed, please just skip the step. Scroll down to [Installation](https://github.com/ronilaukkarinen/dudestack-instructions#installation).
 
 This is just a tip of the iceberg, but I hope it's useful to you.
 
@@ -19,11 +19,12 @@ This is just a tip of the iceberg, but I hope it's useful to you.
 
 ### Tools / bulding blocks for SCSS, jQuery, PHP
 
-#### For building 
+#### For building
 
 - [BitBucket](https://bitbucket.org/) - Bitbucket is a free code DVCS hosting site for Git and Mercurial. Manage your development with a hosted wiki, issue tracker and source code.
-- [RVM](https://rvm.io/) - RVM is a command-line tool which allows you to easily install, manage, and work with multiple ruby environments from interpreters to sets of gems.
 - [Homebrew](http://brew.sh/) - The missing package manager for OS X
+- [Homebrew Cask](http://caskroom.io/) - Homebrew Cask extends Homebrew and brings its elegance, simplicity, and speed to OS X applications and large binaries alike.
+- [RVM](https://rvm.io/) - RVM is a command-line tool which allows you to easily install, manage, and work with multiple ruby environments from interpreters to sets of gems.
 - [Node.js](http://nodejs.org/) - Node.js® is a platform built on Chrome's JavaScript runtime for easily building fast, scalable network applications.
 - [npm](https://www.npmjs.com/) - A package manager for node/browsers/gulp/etc.
 - [Vagrant](https://www.vagrantup.com/) - Create and configure lightweight, reproducible, and portable development environments.
@@ -139,24 +140,27 @@ Please let me know if you have suggestions for new/better apps/modules/plugins..
 # Installation
 
 1. Install latest version of [XCode](https://developer.apple.com/xcode/downloads/) to get necessary utils. Apple's XCode development software is used to build Mac and iOS apps, but it also includes the tools you need to compile software for use on your Mac. XCode is free and you can also find it in the [App Store](https://itunes.apple.com/us/app/xcode/id497799835?mt=12).
-2. Open **Terminal** and run `ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"` to download latest version of [Homebrew](http://brew.sh/)
-3. Install latest version of [rvm](https://rvm.io/) with `curl -L https://get.rvm.io | bash -s stable --auto-dotfiles --autolibs=enable --rails` to get ruby working
-4. Install latest version of [Git](http://git-scm.com/downloads) with `brew install git`
-5. Install latest version of [Composer](https://getcomposer.org) with `curl -sS https://getcomposer.org/installer | php && sudo mv composer.phar /usr/local/bin/composer && sudo chmod +x /usr/local/bin/composer`
-5. [Download VirtualBox](https://www.virtualbox.org/wiki/Downloads)
-6. Install [Vagrant](https://www.vagrantup.com/) with `brew install vagrant`
-7. Install vagrant-triggers with `vagrant plugin install vagrant-triggers`
-8. Clone [jolliest-vagrant](https://github.com/ronilaukkarinen/jolliest-vagrant) with `git clone https://github.com/ronilaukkarinen/jolliest-vagrant.git` to your Projects directory (`cd ~/Projects`), modify **Vagrantfile** if necessary
-9. Create directory for your projects under your home dir with either **Finder** or `mkdir ~/Projects` (this is preferred, but if you decide to store your projects elsewhere, you will have to modify every config where Projects are defined). This directory is the intended location for every project created with this stack and all things related.
-10. Clone [dudestack](https://github.com/ronilaukkarinen/dudestack) to your Projects directory with `cd ~/Projects && git clone https://github.com/ronilaukkarinen/dudestack`
-11. Run `cd ~/Projects/dudestack && sh setup.sh` and complete the setup process
-12. Run `createproject` and wait the script to run through. **Note:** It's intended that every project name is one word, written in lowercase.
-13. Go to your project directory by `cd ~/Project/projectname` and clone [devpackages](https://github.com/ronilaukkarinen/devpackages) with `git clone https://github.com/ronilaukkarinen/devpackages .` (note the dot in the end of a command, we want these to the same directory)
-14. Edit `PROJECTNAME` (project folder name) and `THEMENAME` (your theme folder name in content/themes/x) to match your WordPress project and theme name sin **gulpfile.js** and **package.json**.
-15. Install [Node.js](http://nodejs.org/) with `brew install node`
-16. Install npm updates checker [npm-check-updates](https://www.npmjs.com/package/npm-check-updates) with `sudo npm install -g npm-check-updates`
-17. Check updates for npm modules by running `npm-check-updates -u` (still in the Project directory, /Users/yourusername/Projects/yourproject. You can check where you are by `pwd`)
-18. Install npm package updates by `npm install` and update them by `npm update`
-20. Install [Google Chrome Canary](https://www.google.com/chrome/browser/canary.html)
-21. Run `gulp watch`. A new Google Canary browser window should open and you can start coding your WordPress theme.
-22. If you want to create a landing page instead, go to Project dir with `cd ~/Projects`, clone [modern-html5-boilerplate](https://github.com/ronilaukkarinen/modern-html5-boilerplate) with `git clone https://github.com/ronilaukkarinen/modern-html5-boilerplate`, rename folder to your project, edit **gulpfile.js** and start coding
+2. Install Xcode Command Line Tools by running 'xcode-select --install'
+3. Open **Terminal** and run `ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"` to download latest version of [Homebrew](http://brew.sh/)
+4. Run `brew install caskroom/cask/brew-cask` to get [Homebrew Cask](http://caskroom.io/)
+5. Install latest version of [rvm](https://rvm.io/) with `curl -L https://get.rvm.io | bash -s stable --auto-dotfiles --autolibs=enable --rails` to get ruby working
+6. Install latest version of [Git](http://git-scm.com/downloads) with `brew install git`
+7. Install latest version of [Composer](https://getcomposer.org) with `curl -sS https://getcomposer.org/installer | php && sudo mv composer.phar /usr/local/bin/composer && sudo chmod +x /usr/local/bin/composer`
+8. [Download VirtualBox](https://www.virtualbox.org/wiki/Downloads)
+9. Install [Vagrant](https://www.vagrantup.com/) with `brew install vagrant`
+10. Install [Vagrant Manager](http://vagrantmanager.com/) with `brew cask install vagrant-manager`
+11. Install vagrant-triggers with `vagrant plugin install vagrant-triggers`
+12. Create directory for your projects under your home dir with either **Finder** or `mkdir ~/Projects` (this is preferred, but if you decide to store your projects elsewhere, you will have to modify every config where Projects are defined). This directory is the intended location for every project created with this stack and all things related.
+13. Clone [jolliest-vagrant](https://github.com/ronilaukkarinen/jolliest-vagrant) with `git clone https://github.com/ronilaukkarinen/jolliest-vagrant.git` to your Projects directory (`cd ~/Projects`), modify **Vagrantfile** if necessary
+14. Clone [dudestack](https://github.com/ronilaukkarinen/dudestack) to your Projects directory with `cd ~/Projects && git clone https://github.com/ronilaukkarinen/dudestack`
+15. Run `cd ~/Projects/dudestack && sh setup.sh` and complete the setup process
+16. Run `createproject` and wait the script to run through. **Note:** It's intended that every project name is one word, written in lowercase.
+17. Go to your project directory by `cd ~/Project/projectname` and clone [devpackages](https://github.com/ronilaukkarinen/devpackages) with `git clone https://github.com/ronilaukkarinen/devpackages .` (note the dot in the end of a command, we want these to the same directory)
+18. Edit `PROJECTNAME` (project folder name) and `THEMENAME` (your theme folder name in content/themes/x) to match your WordPress project and theme name sin **gulpfile.js** and **package.json**.
+19. Install [Node.js](http://nodejs.org/) with `brew install node`
+20. Install npm updates checker [npm-check-updates](https://www.npmjs.com/package/npm-check-updates) with `sudo npm install -g npm-check-updates`
+21. Check updates for npm modules by running `npm-check-updates -u` (still in the Project directory, /Users/yourusername/Projects/yourproject. You can check where you are by `pwd`)
+22. Install npm package updates by `npm install` and update them by `npm update`
+23. Install [Google Chrome Canary](https://www.google.com/chrome/browser/canary.html)
+24. Run `gulp watch`. A new Google Canary browser window should open and you can start coding your WordPress theme.
+25. If you want to create a landing page instead, go to Project dir with `cd ~/Projects`, clone [modern-html5-boilerplate](https://github.com/ronilaukkarinen/modern-html5-boilerplate) with `git clone https://github.com/ronilaukkarinen/modern-html5-boilerplate`, rename folder to your project, edit **gulpfile.js** and start coding
