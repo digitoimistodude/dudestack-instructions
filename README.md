@@ -153,7 +153,7 @@ Please let me know if you have suggestions for new/better apps/modules/plugins..
 12. Create directory for your projects under your home dir with either **Finder** or `mkdir ~/Projects` (this is preferred, but if you decide to store your projects elsewhere, you will have to modify every config where Projects are defined). This directory is the intended location for every project created with this stack and all things related.
 13. Clone [jolliest-vagrant](https://github.com/ronilaukkarinen/jolliest-vagrant) with `git clone https://github.com/ronilaukkarinen/jolliest-vagrant.git` to your Projects directory (`cd ~/Projects`), modify **Vagrantfile** if necessary
 14. Clone [dudestack](https://github.com/ronilaukkarinen/dudestack) to your Projects directory with `cd ~/Projects && git clone https://github.com/ronilaukkarinen/dudestack`
-15. Run `cd ~/Projects/dudestack && sh setup.sh` and complete the setup process
+15. Run `cd ~/Projects/dudestack && sh setup.sh` and complete the setup process (answer yes and give root password if given, select network bridge to your main network you're currently using (wifi or eth))
 16. Go through [jolliest-vagrant Post-installations](https://github.com/digitoimistodude/jolliest-vagrant#post-installations)
 17. Run `createproject` and wait the script to run through. **Note:** It's intended that every project name is one word, written in lowercase.
 18. Go to your project directory by `cd ~/Project/projectname` and clone [devpackages](https://github.com/ronilaukkarinen/devpackages) with `git clone https://github.com/ronilaukkarinen/devpackages .` (note the dot in the end of a command, we want these to the same directory)
