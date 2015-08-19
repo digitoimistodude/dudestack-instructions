@@ -156,7 +156,10 @@ Please let me know if you have suggestions for new/better apps/modules/plugins..
 15. Run `cd ~/Projects/dudestack && sh setup.sh` and complete the setup process (answer yes and give root password if given, select network bridge to your main network you're currently using (wifi or eth))
 16. Go through [jolliest-vagrant Post-installations](https://github.com/digitoimistodude/jolliest-vagrant#post-installations)
 17. Run `createproject` and wait the script to run through. **Note:** It's intended that every project name is one word, written in lowercase.
-18. Go to your project directory by `cd ~/Project/projectname` and clone [devpackages](https://github.com/ronilaukkarinen/devpackages) with `git clone https://github.com/ronilaukkarinen/devpackages .` (note the dot in the end of a command, we want these to the same directory)
+
+If you want to use your own Gulpfile, Gruntfile, bower, etc, in this point you are practically done. **Congratulations!** However, if you want to use dudestack-packages, please continue reading.
+
+18. Go to your project directory by `cd ~/Project/projectname` and clone [devpackages](https://github.com/digitoimistodude/devpackages) with `git clone https://github.com/digitoimistodude/devpackages .` (note the dot in the end of a command, we want these to the same directory)
 19. Edit `PROJECTNAME` (project folder name) and `THEMENAME` (your theme folder name in content/themes/x) to match your WordPress project and theme name sin **gulpfile.js** and **package.json**.
 20. Install [Node.js](http://nodejs.org/) with `brew install node`
 21. Install npm updates checker [npm-check-updates](https://www.npmjs.com/package/npm-check-updates) with `sudo npm install -g npm-check-updates`
