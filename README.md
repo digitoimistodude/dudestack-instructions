@@ -8,8 +8,6 @@ The instructions assume that you don't have *anything* pre-installed. If you hav
 
 This is just a tip of the iceberg, but I hope it's useful to you.
 
-**Note:** [The Instructions](https://github.com/ronilaukkarinen/dudestack-instructions#installation) are completely untested, so feel free to do so and throw an issue if something doesn't work out just quite it should.
-
 ### Dudestack-instructions = Instructions for setting up
 
 - Vagrant environment with [jolliest-vagrant](https://github.com/ronilaukkarinen/jolliest-vagrant)
