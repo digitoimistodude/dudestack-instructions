@@ -10,7 +10,7 @@ This is just a tip of the iceberg, but I hope it's useful to you.
 
 ## Table of contents
 
-1. [Dudestack-instructions = Instructions for setting up](#dudestack-instructions-instructions-for-setting-up)
+1. [Dudestack-instructions = Instructions for setting up](#dudestack-instructions--instructions-for-setting-up)
 3. [Requirements](#requirements)
 3. [Installation](#installation)
 4. [Bulding blocks for SCSS, jQuery, PHP](#building-blocks-for-css-jquery-php)
