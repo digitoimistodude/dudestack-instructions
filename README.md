@@ -13,7 +13,7 @@ This is just a tip of the iceberg, but I hope it's useful to you.
 1. [Dudestack-instructions = Instructions for setting up](#dudestack-instructions--instructions-for-setting-up)
 3. [Requirements](#requirements)
 3. [Installation](#installation)
-4. [Bulding blocks for SCSS, jQuery, PHP](#building-blocks-for-css-jquery-php)
+4. [Building blocks for SCSS, jQuery, PHP](#building-blocks-for-css-jquery-php)
     1. [For building](#for-building)
     2. [For developing and designing](#for-developing-and-designing)
         1. [Layout](#layout)
@@ -76,7 +76,7 @@ If you want to use your own Gulpfile, Gruntfile, bower, etc, in this point you a
 25. Run `gulp watch`. A new Google Canary browser window should open and you can start coding your WordPress theme.
 26. If you want to create a landing page instead, go to Project dir with `cd ~/Projects`, clone [modern-html5-boilerplate](https://github.com/ronilaukkarinen/modern-html5-boilerplate) with `git clone https://github.com/ronilaukkarinen/modern-html5-boilerplate`, rename folder to your project, edit **gulpfile.js** and start coding
 
-### Bulding blocks for SCSS, jQuery, PHP
+### Building blocks for SCSS, jQuery, PHP
 
 You will need a WordPress theme, User Interface or website base, so I have collected some useful bits and pieces below.
 
