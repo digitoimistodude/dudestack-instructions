@@ -1,8 +1,8 @@
 # A modern Front End development environment
 
-My company is a digital agency called Dude (Digitoimisto Dude Oy), [check out the company website](https://www.dude.fi) where I'm the head of technical development at the moment. I'm using plenty of tools, apps, modules, frameworks which together are called "stack". Dudestack-instructions contains information about these tools *and* instructions on how to set up a similar stack.
+This is a development manual for a digital agency called Dude (Digitoimisto Dude Oy), [check out the company website](https://www.dude.fi) where [@ronilaukkarinen](https://github.com/ronilaukkarinen) is the head of technical development at the moment. Dude is using plenty of tools, apps, modules, frameworks which together are called "stack". Dudestack-instructions contains information about these tools *and* instructions on how to set up a similar stack.
 
-This repo and instructions exist only because my envinroment setup is growing so fast and there's simply too many repositories to consider when building the stack from scratch.
+This repo and instructions exist only because Dude's envinroment setup is growing in a fast pace and there's simply too many repositories to consider when building the stack from scratch.
 
 The instructions assume that you don't have *anything* pre-installed. If you have something installed, please just skip the step. Scroll down to [Installation](https://github.com/ronilaukkarinen/dudestack-instructions#installation).
 
@@ -23,8 +23,9 @@ This is just a tip of the iceberg, but I hope it's useful to you.
         5. [Navigations](#navigations)
         6. [Typography](#typography)
         7. [Effects](#effects)
-        8. [Freebies](#freebies)
-        9. [Inspiration and useful parts](#inspiration-and-useful-parts)
+        8. [WordPress-themes](#wordpress-themes)
+        9. [Freebies](#freebies)
+        10. [Inspiration and useful parts](#inspiration-and-useful-parts)
     3. [For testing and debugging](#for-testing-and-debugging)
     4. [Other apps and tools included in daily workflow](#other-apps-and-tools-included-in-daily-workflow)
 
@@ -32,7 +33,8 @@ This is just a tip of the iceberg, but I hope it's useful to you.
 
 These will be installed if you follow the instructions:
 
-- Vagrant environment with [jolliest-vagrant](https://github.com/ronilaukkarinen/jolliest-vagrant)
+- Vagrant LAMP environment with [jolliest-vagrant](https://github.com/ronilaukkarinen/jolliest-vagrant) - use if your production server prefers Apache
+- Vagrant LEMP environment with [marlin-vagrant](https://github.com/ronilaukkarinen/marlin-vagrant) - use if your production server prefers Nginx
 - WordPress stack with [dudestack](https://github.com/ronilaukkarinen/dudestack) (based on [roots/bedrock](https://github.com/roots/bedrock))
 - Gulp, nodejs and npm-modules with [devpackages](https://github.com/ronilaukkarinen/devpackages)
 - Landing pages with [modern-html5-boilerplate](https://github.com/ronilaukkarinen/modern-html5-boilerplate)
@@ -40,7 +42,7 @@ These will be installed if you follow the instructions:
 ## Requirements
 
 - Mac OS X
-- Command line
+- Command line, bash
 - Patient learning curve
 - Urge to always know more about anything
 
@@ -96,7 +98,8 @@ You will need a WordPress theme, User Interface or website base, so I have colle
 - [Composer](https://getcomposer.org/) - Dependency Manager for PHP
 - [WP-CLI](http://wp-cli.org/) - A command line interface for WordPress
 - [Google Chrome Canary](https://www.google.com/chrome/browser/canary.html) - Google Chrome Canary has the newest of the new Chrome features.
-- [Sublime Text 3](http://www.sublimetext.com/3) - Sublime Text is a sophisticated text editor for code, markup and prose. (also check out my current [sublime-settings](https://github.com/ronilaukkarinen/sublime-settings))
+- [Sublime Text 3](http://www.sublimetext.com/3) - Sublime Text is a sophisticated text editor for code, markup and prose. (also check out current [sublime-settings](https://github.com/ronilaukkarinen/sublime-settings))
+- [Atom](https://atom.io/) - The hackable text editor by GitHub. Check out [atom-settings](https://github.com/ronilaukkarinen/atom-settings)
 
 #### For developing and designing
 
@@ -108,6 +111,7 @@ You will need a WordPress theme, User Interface or website base, so I have colle
 - [Vide](http://vodkabears.github.io/vide/) Easy as hell jQuery plugin for video backgrounds
 - [jQuery.equalHeights](https://github.com/mattbanks/jQuery.equalHeights) - Simple equal heights jQuery plugin
 - [Packery](http://packery.metafizzy.co/) - Packery makes your crazy & clever layout a real thing.
+- [bricks.js](http://callmecavs.com/bricks.js/) - A blazing fast masonry layout generator for fixed width elements.
 - [Magnific Popup](http://dimsemenov.com/plugins/magnific-popup/) - Magnific Popup is a responsive lightbox & dialog script with focus on performance and providing best experience for user with any device
 - [fancyBox](http://fancyapps.com/fancybox/) - Fancy jQuery Lightbox Alternative
 
@@ -133,10 +137,11 @@ You will need a WordPress theme, User Interface or website base, so I have colle
 
 - [Flexnav-rolle](https://github.com/ronilaukkarinen/flexnav-rolle) - A jQuery plugin for responsive menus
 - [Trunk.js](http://www.roblukedesign.com/trunk/trunk.html) - A responsive web design to hide top navigation into a navigation drawer on Tablets and Mobile Phones
-- [Responsive Nav](http://responsive-nav.com/) - Responsive navigation plugin without library dependencies and with fast touch screen support
+- [Responsive Nav](https://github.com/viljamis/responsive-nav.js) - Responsive navigation plugin without library dependencies and with fast touch screen support
 
 ##### Typography
 
+- [Typographic](https://github.com/corysimmons/typographic) - Easy SCSS or Stylus responsive typography with vertical rhythm, modular scale, font stacks, and more
 - [Sass Boilerplate's fontFace](https://github.com/magnetikonline/sassboilerplate) - Easy include a webfont
 - [knife](https://github.com/Pushplaybang/knife) - Nail vertical rhythm, modular scale, and REMs like a boss with this simple set of SASS/SCSS variables, functions and mixins. (preferred)
 - [Sassy-Gridlover](https://github.com/hiulit/Sassy-Gridlover) - Super easy to use Sass mixins to establish a typographic system with modular scale and vertical rhythm. (alternative)
@@ -144,12 +149,17 @@ You will need a WordPress theme, User Interface or website base, so I have colle
 
 ##### Effects
 
+- [mo.js](https://github.com/legomushroom/mojs) - Motion graphics toolbelt for the web
 - [Animate.css](http://daneden.github.io/animate.css/) - A cross-browser library of CSS animations. As easy to use as an easy thing.
 - [WOW.js](http://mynameismatthieu.com/WOW/) - Reveal Animations When Scrolling
 - [Slick](http://kenwheeler.github.io/slick/) - The last carousel you'll ever need
 - [skrollr](http://prinzhorn.github.io/skrollr/) - Parallax scrolling for the masses
 - [waypoints](http://imakewebthings.com/waypoints/) - Waypoints is the easiest way to trigger a function when you scroll to an element.
 - [saffron](https://github.com/colindresj/saffron) - A simple Sass mixin library for animations and transitions
+
+##### Wordpress-themes
+
+- [Air](https://github.com/digitoimistodude/air) - A minimalist WordPress theme starting point
 
 ##### Freebies
 
