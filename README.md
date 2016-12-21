@@ -4,7 +4,7 @@ This is a development manual for a digital agency called Dude (Digitoimisto Dude
 
 This repo and instructions exist only because Dude's envinroment setup is growing in a fast pace and there's simply too many repositories to consider when building the stack from scratch.
 
-The instructions assume that you don't have *anything* pre-installed. If you have something installed, please just skip the step. Scroll down to [Installation](https://github.com/ronilaukkarinen/dudestack-instructions#installation).
+The instructions assume that you don't have *anything* pre-installed. If you have something installed, please just skip the step. Scroll down to [Installation](https://github.com/digitoimistodude/dudestack-instructions#installation).
 
 This is just a tip of the iceberg, but I hope it's useful to you.
 
@@ -33,11 +33,11 @@ This is just a tip of the iceberg, but I hope it's useful to you.
 
 These will be installed if you follow the instructions:
 
-- Vagrant LAMP environment with [jolliest-vagrant](https://github.com/ronilaukkarinen/jolliest-vagrant) - use if your production server prefers Apache
-- Vagrant LEMP environment with [marlin-vagrant](https://github.com/ronilaukkarinen/marlin-vagrant) - use if your production server prefers Nginx
-- WordPress stack with [dudestack](https://github.com/ronilaukkarinen/dudestack) (based on [roots/bedrock](https://github.com/roots/bedrock))
-- Gulp, nodejs and npm-modules with [devpackages](https://github.com/ronilaukkarinen/devpackages)
-- Landing pages with [modern-html5-boilerplate](https://github.com/ronilaukkarinen/modern-html5-boilerplate)
+- Vagrant LAMP environment with [jolliest-vagrant](https://github.com/digitoimistodude/jolliest-vagrant) - use if your production server prefers Apache
+- Vagrant LEMP environment with [marlin-vagrant](https://github.com/digitoimistodude/marlin-vagrant) - use if your production server prefers Nginx
+- WordPress stack with [dudestack](https://github.com/digitoimistodude/dudestack) (based on [roots/bedrock](https://github.com/roots/bedrock))
+- Gulp, nodejs and npm-modules with [devpackages](https://github.com/digitoimistodude/devpackages)
+- Landing pages with [modern-html5-boilerplate](https://github.com/digitoimistodude/modern-html5-boilerplate)
 
 ## Requirements
 
@@ -60,8 +60,8 @@ These will be installed if you follow the instructions:
 10. Install [Vagrant Manager](http://vagrantmanager.com/) with `brew cask install vagrant-manager`
 11. Install vagrant-triggers with `vagrant plugin install vagrant-triggers`
 12. Create directory for your projects under your home dir with either **Finder** or `mkdir ~/Projects` (this is preferred, but if you decide to store your projects elsewhere, you will have to modify every config where Projects are defined). This directory is the intended location for every project created with this stack and all things related.
-13. Clone [jolliest-vagrant](https://github.com/ronilaukkarinen/jolliest-vagrant) with `git clone https://github.com/ronilaukkarinen/jolliest-vagrant.git` to your Projects directory (`cd ~/Projects`), modify **Vagrantfile** if necessary
-14. Clone [dudestack](https://github.com/ronilaukkarinen/dudestack) to your Projects directory with `cd ~/Projects && git clone https://github.com/ronilaukkarinen/dudestack`
+13. If you prefer Apache, clone [jolliest-vagrant](https://github.com/digitoimistodude/jolliest-vagrant), if Nginx, clone [marlin-vagrant](https://github.com/digitoimistodude/marlin-vagrant) to your Projects directory (`cd ~/Projects`), modify **Vagrantfile** if necessary
+14. Clone [dudestack](https://github.com/digitoimistodude/dudestack) to your Projects directory with `cd ~/Projects && git clone https://github.com/digitoimistodude/dudestack`
 15. Run `cd ~/Projects/dudestack && sh setup.sh` and complete the setup process (answer yes and give root password if given, select network bridge to your main network you're currently using (wifi or eth))
 16. Go through [jolliest-vagrant Post-installations](https://github.com/digitoimistodude/jolliest-vagrant#post-installations)
 17. Run `createproject` and wait the script to run through. **Note:** It's intended that every project name is one word, written in lowercase.
@@ -76,7 +76,7 @@ If you want to use your own Gulpfile, Gruntfile, bower, etc, in this point you a
 23. Install npm package updates by `npm install` and update them by `npm update`
 24. Install [Google Chrome Canary](https://www.google.com/chrome/browser/canary.html)
 25. Run `gulp watch`. A new Google Canary browser window should open and you can start coding your WordPress theme.
-26. If you want to create a landing page instead, go to Project dir with `cd ~/Projects`, clone [modern-html5-boilerplate](https://github.com/ronilaukkarinen/modern-html5-boilerplate) with `git clone https://github.com/ronilaukkarinen/modern-html5-boilerplate`, rename folder to your project, edit **gulpfile.js** and start coding
+26. If you want to create a landing page instead, go to Project dir with `cd ~/Projects`, clone [modern-html5-boilerplate](https://github.com/digitoimistodude/modern-html5-boilerplate) with `git clone https://github.com/digitoimistodude/modern-html5-boilerplate`, rename folder to your project, edit **gulpfile.js** and start coding
 
 ### Building blocks for SCSS, jQuery, PHP
 
@@ -92,14 +92,14 @@ You will need a WordPress theme, User Interface or website base, so I have colle
 - [npm](https://www.npmjs.com/) - A package manager for node/browsers/gulp/etc.
 - [Vagrant](https://www.vagrantup.com/) - Create and configure lightweight, reproducible, and portable development environments.
 - [Vagrant Manager](http://vagrantmanager.com/) - Manage your vagrant machines in one place with Vagrant Manager for OS X.
-- [Gulp](http://gulpjs.com/) - Automate and enhance your workflow (my gulpfile.js can be found in [devpackages](https://github.com/ronilaukkarinen/devpackages))
-- [BrowserSync](http://www.browsersync.io/) - Time-saving synchronised browser testing. (included in Gulp like in many other awesome tasks, check out my [devpackages](https://github.com/ronilaukkarinen/devpackages))
-- [Bower](http://bower.io/) - A package manager for the web (to install and update CSS/Javascript packages and their dependencies, see my [devpackages](https://github.com/ronilaukkarinen/devpackages))
+- [Gulp](http://gulpjs.com/) - Automate and enhance your workflow (my gulpfile.js can be found in [devpackages](https://github.com/digitoimistodude/devpackages))
+- [BrowserSync](http://www.browsersync.io/) - Time-saving synchronised browser testing. (included in Gulp like in many other awesome tasks, check out my [devpackages](https://github.com/digitoimistodude/devpackages))
+- [Bower](http://bower.io/) - A package manager for the web (to install and update CSS/Javascript packages and their dependencies, see my [devpackages](https://github.com/digitoimistodude/devpackages))
 - [Composer](https://getcomposer.org/) - Dependency Manager for PHP
 - [WP-CLI](http://wp-cli.org/) - A command line interface for WordPress
 - [Google Chrome Canary](https://www.google.com/chrome/browser/canary.html) - Google Chrome Canary has the newest of the new Chrome features.
-- [Sublime Text 3](http://www.sublimetext.com/3) - Sublime Text is a sophisticated text editor for code, markup and prose. (also check out current [sublime-settings](https://github.com/ronilaukkarinen/sublime-settings))
-- [Atom](https://atom.io/) - The hackable text editor by GitHub. Check out [atom-settings](https://github.com/ronilaukkarinen/atom-settings)
+- [Sublime Text 3](http://www.sublimetext.com/3) - Sublime Text is a sophisticated text editor for code, markup and prose. (also check out current [sublime-settings](https://github.com/digitoimistodude/sublime-settings))
+- [Atom](https://atom.io/) - The hackable text editor by GitHub. Check out [atom-settings](https://github.com/digitoimistodude/atom-settings)
 
 #### For developing and designing
 
@@ -135,7 +135,7 @@ You will need a WordPress theme, User Interface or website base, so I have colle
 
 ##### Navigations
 
-- [Flexnav-rolle](https://github.com/ronilaukkarinen/flexnav-rolle) - A jQuery plugin for responsive menus
+- [Flexnav-rolle](https://github.com/digitoimistodude/flexnav-rolle) - A jQuery plugin for responsive menus
 - [Trunk.js](http://www.roblukedesign.com/trunk/trunk.html) - A responsive web design to hide top navigation into a navigation drawer on Tablets and Mobile Phones
 - [Responsive Nav](https://github.com/viljamis/responsive-nav.js) - Responsive navigation plugin without library dependencies and with fast touch screen support
 
