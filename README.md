@@ -154,6 +154,7 @@ stock photos in one place (CC0)
 - [caniuse-cmd](https://github.com/sgentle/caniuse-cmd) - [Caniuse](http://caniuse.com/) command line tool
 - [Google PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/) - The PageSpeed tools analyze and optimize your site following web best practices.
 - [GTMetrix](https://gtmetrix.com/) - GTmetrix gives you insight on how well your site loads and provides actionable recommendations on how to optimize it.
+- [alix](https://github.com/ireade/alix) - Alix is a browser extension for a11y.css. It allows you to lint your HTML for Accessibility issues simply by applying a stylesheet that makes use of advanced CSS selectors.
 
 #### Other apps and tools included in daily workflow
 
