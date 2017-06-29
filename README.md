@@ -17,15 +17,11 @@ This is just a tip of the iceberg, but I hope it's useful to you.
     1. [For building](#for-building)
     2. [For developing and designing](#for-developing-and-designing)
         1. [Layout](#layout)
-        2. [Boilerplates](#boilerplates)
-        3. [Social Media integrations](#social-media-integrations)
-        4. [Forms](#forms)
-        5. [Navigations](#navigations)
-        6. [Typography](#typography)
-        7. [Effects](#effects)
-        8. [WordPress-themes](#wordpress-themes)
-        9. [Freebies](#freebies)
-        10. [Inspiration and useful parts](#inspiration-and-useful-parts)
+        2. [Typography](#typography)
+        3. [Effects](#effects)
+        4. [WordPress-themes](#wordpress-themes)
+        5. [Freebies](#freebies)
+        6. [Inspiration and useful parts](#inspiration-and-useful-parts)
     3. [For testing and debugging](#for-testing-and-debugging)
     4. [Other apps and tools included in daily workflow](#other-apps-and-tools-included-in-daily-workflow)
 
@@ -114,30 +110,6 @@ You will need a WordPress theme, User Interface or website base, so I have colle
 - [bricks.js](http://callmecavs.com/bricks.js/) - A blazing fast masonry layout generator for fixed width elements.
 - [Magnific Popup](http://dimsemenov.com/plugins/magnific-popup/) - Magnific Popup is a responsive lightbox & dialog script with focus on performance and providing best experience for user with any device
 - [fancyBox](http://fancyapps.com/fancybox/) - Fancy jQuery Lightbox Alternative
-
-##### Boilerplates
-
-- [Outline](https://github.com/matt-harris/outline) - Outline is a simple CSS starter responsive boilerplate for any new web project, created by Matt Harris
-- [Blueplate](https://github.com/chrishumboldt/Blueplate) - A lightweight, responsive CSS layout engine and SASS mixin library
-- [Penguin](https://github.com/bq/penguin) - Lightweight and extensible front-end basecoat
-
-##### Social Media integrations
-
-- [Pongstagram](http://pongstr.github.io/pongstagr.am/ ) - jQuery plugin that lets you display your Instagram media to your website using Bootstrap Front-end styles and modal-plugin.
-- [Instagram-PHP-API](https://github.com/cosenary/Instagram-PHP-API) - An easy-to-use PHP Class for accessing Instagram's API
-- [Facebook PHP SDK](https://github.com/facebookarchive/facebook-php-sdk) - The Facebook SDK for PHP provides a native interface to the Graph API and Facebook Login (preferably [v4](https://github.com/facebook/facebook-php-sdk-v4))
-- [php-foursquare](https://github.com/hownowstephen/php-foursquare) - A simple foursquare API v2 library for PHP focused on supplying core functionality without any extra bloat.
-- [Pintlabs Untappd](https://github.com/PintLabs/Pintlabs_Service_Untappd) - PHP library to interact with the Untappd public API
-
-##### Forms
-
-- [Buttons](https://github.com/alexwolfe/Buttons) - A CSS button library built using Sass and Compass
-
-##### Navigations
-
-- [Flexnav-rolle](https://github.com/digitoimistodude/flexnav-rolle) - A jQuery plugin for responsive menus
-- [Trunk.js](http://www.roblukedesign.com/trunk/trunk.html) - A responsive web design to hide top navigation into a navigation drawer on Tablets and Mobile Phones
-- [Responsive Nav](https://github.com/viljamis/responsive-nav.js) - Responsive navigation plugin without library dependencies and with fast touch screen support
 
 ##### Typography
 
