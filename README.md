@@ -13,7 +13,7 @@ We hope you enjoy!
 1. [Setting up](#setting-up)
 3. [Requirements](#requirements)
 3. [Install requirements](#install-requirements)
-4. [Install OS X Lemp (preferred)](#install-os-x-lemp-preferred)
+4. [Install macOS LEMP (preferred)](#install-macos-lemp-preferred)
 5. [Install Vagrant (optional)](#install-vagrant-optional)
 6. [Building blocks for SCSS, jQuery, PHP](#building-blocks-for-scss-jquery-php)
     1. [For building](#for-building)
@@ -47,7 +47,7 @@ These will be installed if you follow the instructions:
 6. Install latest version of [Git](http://git-scm.com/downloads) with `brew install git`
 7. Install latest version of [Composer](https://getcomposer.org) with `curl -sS https://getcomposer.org/installer | php && sudo mv composer.phar /usr/local/bin/composer && sudo chmod +x /usr/local/bin/composer`
 
-# Install OS X Lemp (preferred)
+# Install macOS LEMP (preferred)
 
 Follow [the Installation instructions of native LEMP components on Mac](https://github.com/digitoimistodude/osx-lemp-setup)
 
