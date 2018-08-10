@@ -15,7 +15,11 @@ We hope you enjoy!
 3. [Install requirements](#install-requirements)
 4. [Install macOS LEMP (preferred)](#install-macos-lemp-preferred)
 5. [Install Vagrant (optional)](#install-vagrant-optional)
-6. [Building blocks for SCSS, jQuery, PHP](#building-blocks-for-scss-jquery-php)
+6. [Install dudestack](#install-dudestack)
+7. [Install devtools (optional)](#install-devtools-optional)
+8. [Install starter theme](#install-starter-theme)
+9. [How to generate local site specific HTTPS certificates (optional)](#how-to-generate-local-site-specific-https-certificates-optional)
+10. [Building blocks for SCSS, jQuery, PHP](#building-blocks-for-scss-jquery-php)
     1. [For building](#for-building)
     2. [For developing and designing](#for-developing-and-designing)
         1. [Layout](#layout)
@@ -37,7 +41,7 @@ These will be installed if you follow the instructions:
 - Gulp, nodejs and npm-modules with [devpackages](https://github.com/digitoimistodude/devpackages)
 - Landing pages with [modern-html5-boilerplate](https://github.com/digitoimistodude/modern-html5-boilerplate)
 
-# Install requirements
+## Install requirements
 
 1. Install latest version of [XCode](https://developer.apple.com/xcode/downloads/) to get necessary utils. Apple's XCode development software is used to build Mac and iOS apps, but it also includes the tools you need to compile software for use on your Mac. XCode is free and you can also find it in the [App Store](https://itunes.apple.com/us/app/xcode/id497799835?mt=12).
 2. Install Xcode Command Line Tools by running 'xcode-select --install'
@@ -47,21 +51,21 @@ These will be installed if you follow the instructions:
 6. Install latest version of [Git](http://git-scm.com/downloads) with `brew install git`
 7. Install latest version of [Composer](https://getcomposer.org) with `curl -sS https://getcomposer.org/installer | php && sudo mv composer.phar /usr/local/bin/composer && sudo chmod +x /usr/local/bin/composer`
 
-# Install macOS LEMP (preferred)
+## Install macOS LEMP (preferred)
 
 Follow [the Installation instructions of native LEMP components on Mac](https://github.com/digitoimistodude/macos-lemp-setup)
 
-# Install Vagrant (optional)
+## Install Vagrant (optional)
 
 Follow [the Installation instructions of our Vagrant box](https://github.com/digitoimistodude/marlin-vagrant#installation-on-maclinux).
 
-# Install dudestack
+## Install dudestack
 
 1. Clone [dudestack](https://github.com/digitoimistodude/dudestack) to your Projects directory with `cd ~/Projects && git clone https://github.com/digitoimistodude/dudestack`
 15. Run `cd ~/Projects/dudestack && sh bin/setup.sh` and complete the setup process
 17. Run `createproject` and wait the script to run through. **Note:** It's intended that every project name is one word, written in lowercase.
 
-# Install devtools (optional)
+## Install devtools (optional)
 
 If you want to use your own Gulpfile, Gruntfile, bower, etc, in this point you are practically done. **Congratulations!** However, if you want to use dudestack-packages, please continue reading.
 
@@ -74,9 +78,117 @@ If you want to use your own Gulpfile, Gruntfile, bower, etc, in this point you a
 25. Run `gulp watch`. A new browser window should open and you can start coding your WordPress theme.
 26. If you want to create a landing page instead, go to Project dir with `cd ~/Projects`, clone [modern-html5-boilerplate](https://github.com/digitoimistodude/modern-html5-boilerplate) with `git clone https://github.com/digitoimistodude/modern-html5-boilerplate`, rename folder to your project, edit **gulpfile.js** and start coding
 
-# Install starter theme
+## Install starter theme
 
 Follow [the Installation instructions in air theme repository](https://github.com/digitoimistodude/air#installation).
+
+## How to generate local site specific HTTPS certificates (optional)
+
+1. First, create a `~/Certificates` directory to your $HOME.
+
+2. `cd ~/Certificates`, then generate a key (replace `PROJECTNAME` with your actual project name that you defined in `createscript` process: 
+
+```` bash
+openssl genrsa -des3 -passout pass:x -out PROJECTNAME.pass.key 2048 && openssl rsa -passin pass:x -in PROJECTNAME.pass.key -out PROJECTNAME.test.key && rm PROJECTNAME.pass.key
+````
+
+2. Then, generate a certificate based on that key:
+
+```` bash
+openssl req \
+    -key PROJECTNAME.test.key \
+    -x509 \
+    -nodes \
+    -new \
+    -out PROJECTNAME.test.crt \
+    -subj /CN=PROJECTNAME \
+    -reqexts SAN \
+    -extensions SAN \
+    -config <(cat /System/Library/OpenSSL/openssl.cnf \
+        <(printf '[SAN]\nsubjectAltName=DNS:PROJECTNAME')) \
+    -sha256 \
+    -days 3650
+````
+
+3. Then create one for localhost (BrowserSync):
+
+```` bash
+openssl genrsa -des3 -passout pass:x -out localhost.pass.key 2048 && openssl rsa -passin pass:x -in localhost.pass.key -out localhost.key && rm localhost.pass.key
+````
+
+```` bash
+openssl req \
+    -key localhost.key \
+    -x509 \
+    -nodes \
+    -new \
+    -out localhost.crt \
+    -subj /CN=localhost \
+    -reqexts SAN \
+    -extensions SAN \
+    -config <(cat /System/Library/OpenSSL/openssl.cnf \
+        <(printf '[SAN]\nsubjectAltName=DNS:localhost')) \
+    -sha256 \
+    -days 3650
+````
+
+4. Open **Keychain Access** app from macOS Launchpad. Click *Certificates*, then *File > Import Items...*, navigate to *Certificates* directory and select your crt file. Double click added Self-signed root certificate, select **Trust** and choose **Always Trust** in *When using this certificate:* selection. Make sure all dropdowns are **Always Trust**. Close box, add your password and press *Update Settings* button. Do the same for localhost.
+
+5. Change browserSync part of gulpfile.js to match this (with your own username of course):
+
+````
+  browserSync.init(files, {
+    proxy: "https://PROJECTNAME.test",
+    notify: true,
+    browser: "Chromium",
+    https: {
+      key: "/Users/rolle/Certificates/localhost.key",
+      cert: "/Users/rolle/Certificates/localhost.crt"
+    }
+  });
+````
+
+Please note: You don't need to do localhost after first time, once is enough.
+
+6. Change your siteurl and homeurl protocols to https in your `.env` file:
+
+````
+WP_HOME=https://PROJECTNAME.test
+WP_SITEURL=https://PROJECTNAME.test/wp
+````
+
+7. Update your [marlin-vagrant](https://github.com/digitoimistodude/marlin-vagrant) or [macos-lemp-setup](https://github.com/digitoimistodude/macos-lemp-setup) vhost like this:
+
+````
+server {
+    listen 443 ssl http2;
+    root /var/www/PROJECTNAME;
+    index index.php;    
+    server_name PROJECTNAME.test;
+
+    include php7.conf;
+    include global/wordpress.conf;
+
+    ssl_certificate /Users/rolle/Certificates/PROJECTNAME.test.crt;
+    ssl_certificate_key /Users/rolle/Certificates/PROJECTNAME.test.key;
+    ssl_protocols TLSv1 TLSv1.1 TLSv1.2;
+    ssl_prefer_server_ciphers on;
+    ssl_dhparam /etc/ssl/certs/dhparam.pem;
+    ssl_ciphers 'ECDHE-RSA-AES128-GCM-SHA256:ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-ECDSA-AES256-GCM-SHA384:DHE-RSA-AES128-GCM-SHA256:DHE-DSS-AES128-GCM-SHA256:kEDH+AESGCM:ECDHE-RSA-AES128-SHA256:ECDHE-ECDSA-AES128-SHA256:ECDHE-RSA-AES128-SHA:ECDHE-ECDSA-AES128-SHA:ECDHE-RSA-AES256-SHA384:ECDHE-ECDSA-AES256-SHA384:ECDHE-RSA-AES256-SHA:ECDHE-ECDSA-AES256-SHA:DHE-RSA-AES128-SHA256:DHE-RSA-AES128-SHA:DHE-DSS-AES128-SHA256:DHE-RSA-AES256-SHA256:DHE-DSS-AES256-SHA:DHE-RSA-AES256-SHA:AES128-GCM-SHA256:AES256-GCM-SHA384:AES128-SHA256:AES256-SHA256:AES128-SHA:AES256-SHA:AES:CAMELLIA:DES-CBC3-SHA:!aNULL:!eNULL:!EXPORT:!DES:!RC4:!MD5:!PSK:!aECDH:!EDH-DSS-DES-CBC3-SHA:!EDH-RSA-DES-CBC3-SHA:!KRB5-DES-CBC3-SHA';
+    ssl_session_timeout 1d;
+    ssl_session_cache shared:SSL:50m;
+    ssl_stapling_verify on;
+    add_header Strict-Transport-Security max-age=15768000;
+}
+
+server {
+    listen 80;
+    server_name PROJECTNAME.test;
+    return 301 https://$host$request_uri;
+}
+````
+
+8. Run `sudo nginx -t` to test nginx settings (on [macos-lemp-setup](https://github.com/digitoimistodude/macos-lemp-setup)) and restart your nginx service.
 
 ### Building blocks for SCSS, jQuery, PHP
 
