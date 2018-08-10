@@ -165,7 +165,7 @@ stock photos in one place (CC0)
 
 Please let me know if you have suggestions for new/better apps/modules/plugins...
 
-- [SnapRuler](http://www.snaprulerapp.com/) - Screen ruler that does the job for you
+- [PixelSnap](https://getpixelsnap.com/) - The fastest way to measure everything on screen.
 - [ColorSnapper](http://www.colorsnapper.com/) - The missing color picker for Mac
 - [KeepingYouAwake](https://github.com/newmarcel/KeepingYouAwake) - Don't let your Mac fall asleep
 - [Amphetamine](https://itunes.apple.com/us/app/amphetamine/id937984704?mt=12) - With Amphetamine, you can effortlessly override your energy saver settings and keep your Mac awake.
