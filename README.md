@@ -106,12 +106,11 @@ You will need a WordPress theme, User Interface or website base, so I have colle
 ##### Layout
 
 - [Jeet Grid System](http://jeet.gs/) - Smart CSS preprocessor grids
-- [Font Awesome](http://fortawesome.github.io/Font-Awesome/) - The iconic font and CSS toolkit
 - [Normalize.scss](https://github.com/JohnAlbin/normalize-scss) - A modern, HTML5-ready alternative to CSS resets
-- [Vide](http://vodkabears.github.io/vide/) Easy as hell jQuery plugin for video backgrounds
+- [Vide](http://vodkabears.github.io/vide/) - Easy as hell jQuery plugin for video backgrounds
 - [jQuery.equalHeights](https://github.com/mattbanks/jQuery.equalHeights) - Simple equal heights jQuery plugin
 - [Packery](http://packery.metafizzy.co/) - Packery makes your crazy & clever layout a real thing.
-- [bricks.js](http://callmecavs.com/bricks.js/) - A blazing fast masonry layout generator for fixed width elements.
+- [macy.js](https://github.com/bigbitecreative/macy.js) - A lightweight dependency-free JavaScript library designed to sort items vertically into columns by finding an optimum layout with a minimum height.
 - [Magnific Popup](http://dimsemenov.com/plugins/magnific-popup/) - Magnific Popup is a responsive lightbox & dialog script with focus on performance and providing best experience for user with any device
 - [fancyBox](http://fancyapps.com/fancybox/) - Fancy jQuery Lightbox Alternative
 
@@ -119,7 +118,7 @@ You will need a WordPress theme, User Interface or website base, so I have colle
 
 - [Typographic](https://github.com/corysimmons/typographic) - Easy SCSS or Stylus responsive typography with vertical rhythm, modular scale, font stacks, and more
 - [Sass Boilerplate's fontFace](https://github.com/magnetikonline/sassboilerplate) - Easy include a webfont
-- [knife](https://github.com/Pushplaybang/knife) - Nail vertical rhythm, modular scale, and REMs like a boss with this simple set of SASS/SCSS variables, functions and mixins. (preferred)
+- [knife](https://github.com/Pushplaybang/knife) - Nail vertical rhythm, modular scale, and REMs like a boss with this simple set of SASS/SCSS variables, functions and mixins.
 - [Sassy-Gridlover](https://github.com/hiulit/Sassy-Gridlover) - Super easy to use Sass mixins to establish a typographic system with modular scale and vertical rhythm. (alternative)
 - [Sassline](https://sassline.com/) - Set text on the web to a baseline grid with Sass & rems.
 
@@ -135,7 +134,7 @@ You will need a WordPress theme, User Interface or website base, so I have colle
 
 ##### Wordpress-themes
 
-- [Air](https://github.com/digitoimistodude/air) - A minimalist WordPress theme starting point
+- [Air-light](https://github.com/digitoimistodude/air-light) - A minimalist WordPress theme starting point
 
 ##### Freebies
 
@@ -153,12 +152,14 @@ stock photos in one place (CC0)
 - [Codrops](http://tympanus.net/codrops/)
 - [Codepen](http://codepen.io/)
 
-#### For testing and debugging
+#### Testing and debugging
 
 - [caniuse-cmd](https://github.com/sgentle/caniuse-cmd) - [Caniuse](http://caniuse.com/) command line tool
 - [Google PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/) - The PageSpeed tools analyze and optimize your site following web best practices.
 - [GTMetrix](https://gtmetrix.com/) - GTmetrix gives you insight on how well your site loads and provides actionable recommendations on how to optimize it.
 - [alix](https://github.com/ireade/alix) - Alix is a browser extension for a11y.css. It allows you to lint your HTML for Accessibility issues simply by applying a stylesheet that makes use of advanced CSS selectors.
+- [tota11y](https://github.com/Khan/tota11y) - An accessibility (a11y) visualization toolkit
+- [WAVE](https://wave.webaim.org/extension/) - Web accessibility evaluation tool
 
 #### Other apps and tools included in daily workflow
 
