@@ -32,7 +32,7 @@ We hope you enjoy!
 These will be installed if you follow the instructions:
 
 - Vagrant LEMP environment with [marlin-vagrant](https://github.com/digitoimistodude/marlin-vagrant) (use if you prefer Vagrant)
-- OS X native LEMP environment (Homebrew) [osx-lemp-setup](https://github.com/digitoimistodude/osx-lemp-setup) (use if you prefer native approach without VM)
+- macOS native LEMP environment (Homebrew) [macos-lemp-setup](https://github.com/digitoimistodude/macos-lemp-setup) (use if you prefer native approach without VM)
 - WordPress stack with [dudestack](https://github.com/digitoimistodude/dudestack) (based on [roots/bedrock](https://github.com/roots/bedrock))
 - Gulp, nodejs and npm-modules with [devpackages](https://github.com/digitoimistodude/devpackages)
 - Landing pages with [modern-html5-boilerplate](https://github.com/digitoimistodude/modern-html5-boilerplate)
@@ -49,7 +49,7 @@ These will be installed if you follow the instructions:
 
 # Install macOS LEMP (preferred)
 
-Follow [the Installation instructions of native LEMP components on Mac](https://github.com/digitoimistodude/osx-lemp-setup)
+Follow [the Installation instructions of native LEMP components on Mac](https://github.com/digitoimistodude/macos-lemp-setup)
 
 # Install Vagrant (optional)
 
@@ -85,13 +85,13 @@ You will need a WordPress theme, User Interface or website base, so I have colle
 #### For building
 
 - [BitBucket](https://bitbucket.org/) - Bitbucket is a free code DVCS hosting site for Git and Mercurial. Manage your development with a hosted wiki, issue tracker and source code.
-- [Homebrew](http://brew.sh/) - The missing package manager for OS X
-- [Homebrew Cask](http://caskroom.io/) - Homebrew Cask extends Homebrew and brings its elegance, simplicity, and speed to OS X applications and large binaries alike.
+- [Homebrew](http://brew.sh/) - The missing package manager for macOS
+- [Homebrew Cask](http://caskroom.io/) - Homebrew Cask extends Homebrew and brings its elegance, simplicity, and speed to macOS applications and large binaries alike.
 - [RVM](https://rvm.io/) - RVM is a command-line tool which allows you to easily install, manage, and work with multiple ruby environments from interpreters to sets of gems.
 - [Node.js](http://nodejs.org/) - Node.js® is a platform built on Chrome's JavaScript runtime for easily building fast, scalable network applications.
 - [npm](https://www.npmjs.com/) - A package manager for node/browsers/gulp/etc.
 - [Vagrant](https://www.vagrantup.com/) - Create and configure lightweight, reproducible, and portable development environments.
-- [Vagrant Manager](http://vagrantmanager.com/) - Manage your vagrant machines in one place with Vagrant Manager for OS X.
+- [Vagrant Manager](http://vagrantmanager.com/) - Manage your vagrant machines in one place with Vagrant Manager for macOS.
 - [Gulp](http://gulpjs.com/) - Automate and enhance your workflow (my gulpfile.js can be found in [devpackages](https://github.com/digitoimistodude/devpackages))
 - [BrowserSync](http://www.browsersync.io/) - Time-saving synchronised browser testing. (included in Gulp like in many other awesome tasks, check out my [devpackages](https://github.com/digitoimistodude/devpackages))
 - [Bower](http://bower.io/) - A package manager for the web (to install and update CSS/Javascript packages and their dependencies, see my [devpackages](https://github.com/digitoimistodude/devpackages))
@@ -173,4 +173,4 @@ Please let me know if you have suggestions for new/better apps/modules/plugins..
 - [f.lux](https://justgetflux.com/) - Is your computer keeping you up late? f.lux is free software that warms up your computer display at night, to match your indoor lighting.
 - [ImageOptim](https://imageoptim.com/) - better Save For Web
 - [Moom](http://manytricks.com/moom/) - Move and zoom windows
-- [LittleIpsum](https://itunes.apple.com/us/app/littleipsum/id405772121?mt=12) - The best Latin text generator for OS X. Incredibly quick and lightweight. And it’s completely free!
+- [LittleIpsum](https://itunes.apple.com/us/app/littleipsum/id405772121?mt=12) - The best Latin text generator for macOS. Incredibly quick and lightweight. And it’s completely free!
