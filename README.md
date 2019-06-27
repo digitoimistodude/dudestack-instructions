@@ -244,7 +244,7 @@ You will need a WordPress theme, User Interface or website base, so I have colle
 - [waypoints](http://imakewebthings.com/waypoints/) - Waypoints is the easiest way to trigger a function when you scroll to an element.
 - [saffron](https://github.com/colindresj/saffron) - A simple Sass mixin library for animations and transitions
 
-##### Wordpress-themes
+##### WordPress-themes
 
 - [Air-light](https://github.com/digitoimistodude/air-light) - A minimalist WordPress theme starting point
 
