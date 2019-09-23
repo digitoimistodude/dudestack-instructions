@@ -45,8 +45,9 @@ These will be installed if you follow the instructions:
 
 1. Install latest version of [XCode](https://developer.apple.com/xcode/downloads/) to get necessary utils. Apple's XCode development software is used to build Mac and iOS apps, but it also includes the tools you need to compile software for use on your Mac. XCode is free and you can also find it in the [App Store](https://itunes.apple.com/us/app/xcode/id497799835?mt=12).
 2. Install Xcode Command Line Tools by running 'xcode-select --install'
-3. Install Homebrew. Open **Terminal** and run `ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"` to download latest version of [Homebrew](http://brew.sh/)
-4. Run `brew install caskroom/cask/brew-cask` to get [Homebrew Cask](http://caskroom.io/)
+3. Install 
+. Open **Terminal** and run `ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"` to download latest version of [Homebrew](http://brew.sh/)
+4. Run `brew install caskroom/cask/brew-cask` to get [Homebrew Cask](https://formulae.brew.sh/cask/)
 5. Install latest version of [rvm](https://rvm.io/) with `curl -L https://get.rvm.io | bash -s stable --auto-dotfiles --autolibs=enable --rails` to get ruby working
 6. Install latest version of [Git](http://git-scm.com/downloads) with `brew install git`
 7. Install latest version of [Composer](https://getcomposer.org) with `curl -sS https://getcomposer.org/installer | php && sudo mv composer.phar /usr/local/bin/composer && sudo chmod +x /usr/local/bin/composer`
